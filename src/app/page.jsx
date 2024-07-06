@@ -1,5 +1,11 @@
 import Image from "next/image";
+import { Button } from "@nextui-org/button";
 
 export default function Home() {
-	return <div>hello world!</div>;
+	return (
+		<>
+			<div>hello world!</div>
+			<Button>Click me</Button>
+		</>
+	);
 }

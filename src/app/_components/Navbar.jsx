@@ -1,8 +1,21 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Navbar() {
+import React from "react";
+import {
+	Navbar,
+	NavbarBrand,
+	NavbarContent,
+	NavbarItem,
+	Link,
+	Button,
+	NavbarMenuToggle,
+	NavbarMenu,
+	NavbarMenuItem,
+} from "@nextui-org/react";
+
+export default function App() {
 	const pathname = usePathname();
 	const routes = [
 		{ name: "About Me", route: "/about-me" },
@@ -11,24 +24,45 @@ export default function Navbar() {
 		{ name: "FAQ", route: "/FAQ" },
 		{ name: "Projects", route: "/projects" },
 	];
-
 	return (
 		<>
-			<div className="flex justify-between w-screen">
-				{routes.map((route) => {
-					const isActiveLink = pathname.startsWith(route.route);
+			<Navbar shouldHideOnScroll>
+				<NavbarContent className="hidden sm:flex gap-4" justify="center">
+					{routes.map((route) => (
+						<NavbarItem key={route.name} isActive={pathname.startsWith(route.route)}>
+							<Link
+								href={route.route}
+								aria-current={pathname === route.route ? "page" : undefined}
+							>
+								{route.name}
+							</Link>
+						</NavbarItem>
+					))}
+				</NavbarContent>
+			</Navbar>
 
-					return (
-						<Link
-							className={isActiveLink ? "text-blue-500" : ""}
-							href={route.route}
+			{/* <Navbar shouldHideOnScroll>
+					<NavbarContent className="sm:hidden" justify="start">
+					<NavbarMenuToggle />
+				</NavbarContent>
+				<NavbarMenu>
+					{routes.map((route) => (
+						<NavbarMenuItem
 							key={route.name}
+							isActive={pathname.startsWith(route.route)}
 						>
-							{route.name}
-						</Link>
-					);
-				})}
-			</div>
+							<Link
+								href={route.route}
+								aria-current={pathname === route.route ? "page" : undefined}
+							>
+								{route.name}
+							</Link>
+						</NavbarMenuItem>
+					))}
+				</NavbarMenu>
+			</Navbar> */}
 		</>
 	);
 }
+
+// https://nextui.org/docs/components/navbar
