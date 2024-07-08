@@ -2,7 +2,6 @@
 // import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import React from "react";
 import {
 	Navbar,
 	NavbarBrand,
@@ -14,6 +13,7 @@ import {
 	NavbarMenu,
 	NavbarMenuItem,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function App() {
 	const pathname = usePathname();
@@ -26,8 +26,18 @@ export default function App() {
 	];
 	return (
 		<>
-			<Navbar shouldHideOnScroll>
-				<NavbarContent className="hidden sm:flex gap-4" justify="center">
+			<Navbar maxWidth="full" shouldHideOnScroll>
+				<NavbarBrand>
+					<Image
+						src="/tortoise.jpeg"
+						width={50}
+						height={50}
+						className="mr-4"
+						alt="pixel art of a tortoise"
+					/>
+					<p className="font-bold text-inherit">Chai Yi Kang</p>
+				</NavbarBrand>
+				<NavbarContent className="hidden sm:flex gap-4" justify="end">
 					{routes.map((route) => (
 						<NavbarItem key={route.name} isActive={pathname.startsWith(route.route)}>
 							<Link

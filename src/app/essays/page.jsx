@@ -1,16 +1,15 @@
 import Link from "next/link";
 
-const essays = ["1", "2", "3", "4", "5"];
+const essays = ["The Tortoise and The Hare", "2", "3", "4", "5"];
 
 export default function Page() {
 	return (
 		<>
-			<div>essays</div>
 			<ul>
 				{essays.map((essay) => (
-					<Link href={`/essays/${essay}`} key={essay}>
-						{essay}
-					</Link>
+					<li key={essay} className="text-xl mb-4">
+						<Link href={`/essays/${essay}`}>{essay}</Link>
+					</li>
 				))}
 			</ul>
 		</>
