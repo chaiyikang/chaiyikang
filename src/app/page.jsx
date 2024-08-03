@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@nextui-org/button";
 import { playfair_display } from "./ui/fonts";
 
 export default function Home() {

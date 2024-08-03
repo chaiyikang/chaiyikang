@@ -2,7 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 import Navbar from "./_components/Navbar";
 import { inter } from "./ui/fonts";
-import { Providers } from "./providers";
+import AnimatedCursor from "react-animated-cursor";
 
 export const metadata = {
 	title: "Create Next App",
@@ -13,10 +13,22 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className="">
 			<body className={`${inter.className} antialiased`}>
-				<Providers>
-					<Navbar />
-					{children}
-				</Providers>
+				<AnimatedCursor
+					innerSize={8}
+					outerSize={35}
+					innerScale={1}
+					outerScale={2}
+					outerAlpha={0}
+					hasBlendMode={true}
+					innerStyle={{
+						backgroundColor: "var(--cursor-color)",
+					}}
+					outerStyle={{
+						border: "3px solid var(--cursor-color)",
+					}}
+				/>
+				<Navbar />
+				{children}
 			</body>
 		</html>
 	);
