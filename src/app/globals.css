@@ -70,3 +70,52 @@ body {
 		@apply bg-background text-foreground;
 	}
 }
+
+.prose {
+	max-width: 80ch;
+}
+
+.prose p {
+	margin-bottom: 1.5em;
+	font-size: 1.25rem;
+	line-height: 1.75;
+}
+
+.prose h1 {
+	font-size: 3.5rem;
+	line-height: 1.2;
+	margin-bottom: 1em;
+}
+
+.prose h2 {
+	font-size: 2.5rem;
+	line-height: 1.3;
+	margin-top: 1.5em;
+	margin-bottom: 0.75em;
+}
+
+.prose ol > li {
+	padding-left: 0.5em;
+	font-size: 1.25rem;
+	line-height: 1.75;
+}
+
+.prose ol {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+@media (min-width: 1024px) {
+	.prose p,
+	.prose ol > li {
+		font-size: 1.375rem;
+	}
+
+	.prose h1 {
+		font-size: 4rem;
+	}
+
+	.prose h2 {
+		font-size: 3rem;
+	}
+}

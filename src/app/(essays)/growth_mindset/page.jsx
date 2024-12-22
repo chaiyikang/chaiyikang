@@ -2,6 +2,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Title from "@/app/(essays)/essay_components/title";
+import Heading from "@/app/(essays)/essay_components/heading";
+import Paragraph from "@/app/(essays)/essay_components/paragraph";
+import Quote from "@/app/(essays)/essay_components/quote";
 
 export default function EssayPage() {
 	return (
@@ -9,14 +13,14 @@ export default function EssayPage() {
 			<Header />
 			<main className="container mx-auto px-4 py-8">
 				<article className="prose prose-invert lg:prose-xl mx-auto">
-					<h1 className="text-4xl font-bold mb-6 text-slate-100">
-						The Tortoise and The Hare
-					</h1>
-					<p className="text-slate-300 mb-4">
-						Written on 9 February, 2024
-					</p>
+					<Title>The Tortoise and The Hare</Title>
+					<Paragraph>Written on 9 February, 2024</Paragraph>
 					<div className="space-y-4 text-slate-200">
-						<p>
+						<Quote>
+							…the tortoise would have never won,
+							despite the hare’s complacency.
+						</Quote>
+						<Paragraph>
 							What was the moral of the story of the
 							tortoise and the hare? If we had
 							considered the blunder of the hare, we may
@@ -29,8 +33,8 @@ export default function EssayPage() {
 							insight about what I consider to be the
 							most crucial concept in self-improvement —
 							the growth mindset.
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							The tortoise never should have been able
 							to win the race. What made his win
 							possible? While the hare only lost because
@@ -40,8 +44,8 @@ export default function EssayPage() {
 							ahead he was out of sight, the tortoise
 							would have never won, despite the hare’s
 							complacency.
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							So why didn’t the tortoise stop? Did he
 							genuinely believe that he could win? He
 							couldn’t have been sure that the hare
@@ -54,18 +58,18 @@ export default function EssayPage() {
 							how much slower than the hare he was, as
 							long as he kept going, he too, could reach
 							the finish line, just like the hare.
-						</p>
-						<h2 className="text-2xl font-semibold text-slate-100 mt-8 mb-4">
+						</Paragraph>
+						<Heading>
 							Becoming unstoppable is the secret
 							ingredient to a growth mindset
-						</h2>
-						<p>
+						</Heading>
+						<Quote>
 							An unstoppable object moving towards a
 							destination will always reach the
 							destination, no matter how mind-numbingly,
 							excruciatingly slow it is moving.
-						</p>
-						<p>
+						</Quote>
+						<Paragraph>
 							If it was never about a race or a
 							competition to the tortoise, we should
 							also stop reflecting on the story as if it
@@ -79,8 +83,8 @@ export default function EssayPage() {
 							you’ve been trying to develop a growth
 							mindset, this secret ingredient is perhaps
 							the last piece of the puzzle.
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							People with a fixed mindset believe that
 							their abilities are set from birth and are
 							immutable. For instance, one would say,
@@ -92,8 +96,8 @@ export default function EssayPage() {
 							own actions. For instance, one would
 							instead say, “I’m bad at math, I really
 							need to practice more.”
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							However, sometimes simply believing that
 							we have a capacity for growth can be
 							discouraging. If you wanted to increase
@@ -120,8 +124,8 @@ export default function EssayPage() {
 							get stronger, doing pushups today probably
 							won’t increase the number you can do
 							tomorrow.
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							An unstoppable object moving towards a
 							destination will always reach the
 							destination, no matter how mind-numbingly,
@@ -132,18 +136,17 @@ export default function EssayPage() {
 							to get there, for your ice cube to finish
 							melting, you must be like the tortoise —
 							unstoppable.
-						</p>
-
-						<h2 className="text-2xl font-semibold text-slate-100 mt-8 mb-4">
+						</Paragraph>
+						<Heading>
 							Slow and steady finishes the journey
-						</h2>
-						<p>
+						</Heading>
+						<Quote>
 							When it comes to areas of personal growth,
 							it should never be a race. And if it is
 							not a race, who cares if you’re going
 							slow?
-						</p>
-						<p>
+						</Quote>
+						<Paragraph>
 							Perhaps The Tortoise and The Hare really
 							should have been “The Tortoise and The
 							Other Tortoise Who Ran Too Fast, Got Tired
@@ -175,15 +178,15 @@ export default function EssayPage() {
 							changes are good enough, because so long
 							as you are unstoppable, you will still
 							reach your goals.
-						</p>
-						<p>
+						</Paragraph>
+						<Quote>
 							This echoes the Japanese concept of
 							Kaizen, the philosophy of continuous
 							improvement and the belief that small,
 							incremental improvements can lead to huge
 							impacts over time.
-						</p>
-						<p>
+						</Quote>
+						<Paragraph>
 							On my 20th birthday, I resolved to start
 							calisthenics as a means to become and look
 							stronger. I tracked my progress for the
@@ -195,8 +198,8 @@ export default function EssayPage() {
 							improvement. By Day 39, I could do 8 reps.
 							Take a guess how many more days it took to
 							improve by 1 more rep.
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							It took a mind-numbing 221 more days,
 							until I finally managed to squeeze out
 							that 9th rep on Day 260. For the amount of
@@ -208,8 +211,8 @@ export default function EssayPage() {
 							results. So long as I was still training
 							properly, I just kept believing that my
 							ice cube was still melting.
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							I’m proud of the fact that I never
 							stopped. If I had stopped, I would have
 							ceded to the fixed mindset and started
@@ -219,8 +222,8 @@ export default function EssayPage() {
 							would never have been able to do more than
 							8, for as long as I believed that it was
 							true.
-						</p>
-						<p>
+						</Paragraph>
+						<Paragraph>
 							In essence, don’t judge yourself if your
 							progress is slow or even unnoticeable.
 							When it comes to areas of personal growth,
@@ -230,20 +233,19 @@ export default function EssayPage() {
 							unstoppable — so unstoppable that you keep
 							going even if you don’t see progress for
 							220 days.
-						</p>
-
-						<h2 className="text-2xl font-semibold text-slate-100 mt-8 mb-4">
-							Conclusion
-						</h2>
-						<p>The tortoise teaches us:</p>
+						</Paragraph>
+						<Heading>Conclusion</Heading>
+						<Paragraph>
+							The tortoise teaches us:
+						</Paragraph>
 						<ol>
 							<li>
-								Be unstoppable. So long as you are
+								1. Be unstoppable. So long as you are
 								unstoppable, you will certainly reach
 								your goal.
 							</li>
 							<li>
-								The growth mindset isn’t easy. Your
+								2. The growth mindset isn’t easy. Your
 								progress may be slow, or even
 								unnoticeable — which is the true test
 								of a growth mindset. But if you can
@@ -251,8 +253,8 @@ export default function EssayPage() {
 								growth mindset incredibly powerful.
 							</li>
 							<li>
-								Is it really a race? We’ve been able
-								to uncover these lessons by
+								3. Is it really a race? We’ve been
+								able to uncover these lessons by
 								considering that The Tortoise and The
 								Hare was never a race. Likewise, if we
 								recognise that areas of personal
@@ -262,13 +264,13 @@ export default function EssayPage() {
 								faster other people are.{" "}
 							</li>
 						</ol>
-						<p>
+						<Paragraph>
 							It would be nice to be able to run as fast
 							as the Hare. But as life would have it,
 							most of the time, we can only go as fast
 							as the Tortoise. But that’s okay. So long
 							as we don’t stop, we’ll get there.
-						</p>
+						</Paragraph>
 					</div>
 				</article>
 				<div className="mt-12 text-center">

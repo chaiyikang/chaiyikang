@@ -10,7 +10,7 @@ const projects = [
 			"Chairdoro. An aesthetic pomodoro timer. Complete with a to-do list, and statistics tracking integrated with tasks.",
 		technologies: ["React", "Tailwind CSS", "Supabase"],
 		link: "https://chairdoro.netlify.app/",
-		image: "/chairdoro.png",
+		image: "/chairdoro.jpeg",
 	},
 ];
 
