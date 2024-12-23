@@ -7,10 +7,10 @@ export default function Header() {
 				<Link href="/" className="text-2xl font-bold">
 					Yi Kang
 				</Link>
-				<ul className="flex space-x-6">
+				{/* <ul className="flex space-x-6">
 					<li>
 						<Link
-							href="#about"
+							href="/about"
 							className="hover:text-slate-300 transition-colors"
 						>
 							About
@@ -18,7 +18,7 @@ export default function Header() {
 					</li>
 					<li>
 						<Link
-							href="#projects"
+							href="/projects"
 							className="hover:text-slate-300 transition-colors"
 						>
 							Projects
@@ -26,13 +26,13 @@ export default function Header() {
 					</li>
 					<li>
 						<Link
-							href="#essays"
+							href="/essays"
 							className="hover:text-slate-300 transition-colors"
 						>
 							Essays
 						</Link>
 					</li>
-				</ul>
+				</ul> */}
 			</nav>
 		</header>
 	);

@@ -6,6 +6,7 @@ import Title from "@/app/(essays)/essay_components/title";
 import Heading from "@/app/(essays)/essay_components/heading";
 import Paragraph from "@/app/(essays)/essay_components/paragraph";
 import Quote from "@/app/(essays)/essay_components/quote";
+import Backhome from "@/app/(essays)/essay_components/backhome";
 
 export default function EssayPage() {
 	return (
@@ -19,15 +20,7 @@ export default function EssayPage() {
 						{/* essay goes here */}
 					</div>
 				</article>
-				<div className="mt-12 text-center">
-					<Button
-						asChild
-						variant="secondary"
-						className="bg-slate-700 text-slate-100 hover:bg-slate-600"
-					>
-						<Link href="/#essays">Back to Essays</Link>
-					</Button>
-				</div>
+				<Backhome />
 			</main>
 			<Footer />
 		</>

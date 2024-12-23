@@ -2,6 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import EssayCard from "@/components/EssayCard";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Github } from "lucide-react";
 
 const projects = [
 	{
@@ -20,6 +23,12 @@ const essays = [
 		description:
 			"The single most powerful thing I have learnt in my life.",
 		link: "/growth_mindset",
+	},
+	{
+		title: "I don't know how to study",
+		description:
+			"Written by a student with perfect A level grades",
+		link: "/studying",
 	},
 ];
 
@@ -64,6 +73,30 @@ export default function Home() {
 						</div>
 					</section>
 				</div>
+				<section id="github" className="my-16 text-center">
+					<h2 className="text-3xl font-bold mb-6 text-slate-100">
+						Check Out My GitHub
+					</h2>
+					<p className="text-xl mb-8 text-slate-300">
+						Explore more of my projects and contributions
+						on GitHub.
+					</p>
+					<Button
+						asChild
+						variant="outline"
+						size="lg"
+						className="bg-slate-800 text-slate-100 hover:bg-slate-700"
+					>
+						<Link
+							href="https://github.com/yourusername"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Github className="mr-2 h-5 w-5" />
+							Visit My GitHub Profile
+						</Link>
+					</Button>
+				</section>
 			</main>
 			<Footer />
 		</>
