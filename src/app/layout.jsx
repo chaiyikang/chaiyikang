@@ -4,8 +4,7 @@ import "./globals.css";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "Your Name - Portfolio",
-	description: "Computer Science Student and Web Developer",
+	title: "Yi Kang's Portfolio",
 };
 
 export default function RootLayout({ children }) {
