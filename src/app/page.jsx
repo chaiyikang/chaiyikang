@@ -88,7 +88,7 @@ export default function Home() {
 						className="bg-slate-800 text-slate-100 hover:bg-slate-700"
 					>
 						<Link
-							href="https://github.com/yourusername"
+							href="https://github.com/chaiyikang"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
