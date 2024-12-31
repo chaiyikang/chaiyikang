@@ -72,16 +72,16 @@ export default function EssayPage() {
 							they learn to take math exams. Students
 							don't learn how to do experiments in the
 							laboratory, they learn to take practical
-							assessments. If a student wants to learn
-							multivariable calculus instead of reading
-							news articles, he is punished, because
-							while his understanding of multivariable
-							calculus will not show up in his
-							transcript, his D grade in General Paper
-							will. But if students could get extra
-							credit in exams for singing the national
-							anthem backwards, you will sure as hell
-							see most students suddenly become
+							assessments. Woe betide a student who
+							wants to learn multivariable calculus
+							instead of reading news articles. He is
+							punished, because while his understanding
+							of multivariable calculus will not show up
+							in his transcript, his D grade in General
+							Paper will. But if students could get
+							extra credit in exams for singing the
+							national anthem backwards, you will sure
+							as hell see most students suddenly become
 							excellent backwards singers.
 						</Paragraph>
 						<Paragraph>

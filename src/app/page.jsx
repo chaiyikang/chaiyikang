@@ -26,11 +26,15 @@ const essays = [
 	},
 	{
 		title: "I don't know how to study",
-		description:
-			"Written by a student with perfect A level grades",
+		description: "Even though I have good grades",
 		link: "/studying",
 	},
-];
+	// {
+	// 	title: "Awaken the Giant Within",
+	// 	description: `A detailed review of Tony Robbins' "Awaken the Giant Within"`,
+	// 	link: "/awaken-the-giant",
+	// },
+].reverse();
 
 export default function Home() {
 	return (
