@@ -21,6 +21,7 @@ const projects = [
 		technologies: ["React", "Tailwind CSS", "Supabase"],
 		link: "https://chairdoro.netlify.app/",
 		image: "/chairdoro.jpeg",
+		newTab: true,
 	},
 ];
 
