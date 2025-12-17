@@ -6,7 +6,6 @@ import Paragraph from "@/app/projects/project_components/paragraph";
 import Backhome from "@/app/projects/project_components/backhome";
 import Figure from "../project_components/figure";
 import TechStack from "../project_components/tech_stack";
-import Link from "next/link";
 
 export default function ProjectPage() {
 	return (
@@ -18,9 +17,9 @@ export default function ProjectPage() {
 					<Heading>Introduction / Abstract</Heading>
 					<Paragraph>
 						In this exploratory project, I used a machine learning pipeline to analyse{" "}
-						<Link className="text-blue-500 underline" href={"https.www.10xgenomics.com/datasets/mouse-brain-section-coronal-1-standard-1-1-0"}>
+						<a className="text-blue-500 underline" href={"https://www.10xgenomics.com/datasets/mouse-brain-section-coronal-1-standard-1-1-0"} target={"_blank"}>
 							10x Visium sample data of mouse brain section
-						</Link>
+						</a>
 					</Paragraph>
 					<Figure title={"Figure 1: Mouse Brain Coronal Section"} imageSrc={"/visium/fig1.png"}></Figure>
 					<Paragraph>
